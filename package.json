@@ -1,6 +1,6 @@
 {
     "name": "@saltcute/logger",
-    "version": "0.0.0",
+    "version": "1.0.0",
     "description": "Logger ultility.",
     "homepage": "https://github.com/saltcute/logger#readme",
     "bugs": {
