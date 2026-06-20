@@ -1,0 +1,44 @@
+{
+    "name": "@saltcute/logger",
+    "version": "0.0.0",
+    "description": "Logger ultility.",
+    "homepage": "https://github.com/saltcute/logger#readme",
+    "bugs": {
+        "url": "https://github.com/saltcute/logger/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/saltcute/logger.git"
+    },
+    "license": "MIT",
+    "author": "saltcute",
+    "type": "module",
+    "exports": {
+        ".": "./dist/logger.js"
+    },
+    "files": [
+        "dist/"
+    ],
+    "scripts": {
+        "build": "tsc && tsc-alias",
+        "clean": "rimraf dist/*",
+        "format": "biome format --write",
+        "lint": "biome lint --write",
+        "make": "npm run clean && npm run format && npm run lint && npm run build"
+    },
+    "devDependencies": {
+        "@biomejs/biome": "^2.5.0",
+        "@types/node": "^25.9.3",
+        "rimraf": "^6.1.3",
+        "tsc-alias": "^1.8.17",
+        "typescript": "^6.0.3"
+    },
+    "dependencies": {
+        "@loglayer/log-level-manager-global": "^2.2.0",
+        "@loglayer/log-level-manager-one-way": "^2.2.0",
+        "@loglayer/transport-pino": "^3.2.0",
+        "dotenv": "^17.4.2",
+        "loglayer": "^9.3.0",
+        "pino": "^10.3.1"
+    }
+}
