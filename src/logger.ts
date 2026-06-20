@@ -42,5 +42,7 @@ switch (logLevel) {
         setLogLevel(logLevel);
         break;
     default:
+        setLogLevel(LogLevel.info);
+        
         break;
 }
